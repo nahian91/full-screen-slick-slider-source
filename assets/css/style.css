@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.single-slider {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+}
+.single-slider:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: -1;
+  height: ;
+}
+.slider-content {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+}
+.slider-content h4 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.slider-content a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff7720;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+.sliders .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: #ff7720;
+  border: 0;
+  padding: 20px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.sliders .slick-prev {
+  left: 20px;
+}
+.sliders .slick-next {
+  right: 20px;
+}
+
+.sliders .slick-dots {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+.sliders .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.sliders .slick-dots li button {
+  border: 0;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sliders .slick-dots li.slick-active button {
+  background-color: #ff7720;
+  color: #fff;
+}
+.sliders .slick-slide {
+  height: 100vh;
+}
